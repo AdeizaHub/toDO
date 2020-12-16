@@ -47,10 +47,6 @@ ul li:before {
   padding: 10px 10px;
   font-size: 20px;
 }
-ul li:hover {
-  text-decoration: line-through;
-  cursor: pointer;
-}
 ul li:last-child {
   border-bottom: none;
 }

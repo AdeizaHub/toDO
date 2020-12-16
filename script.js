@@ -5,8 +5,8 @@
 
   form.addEventListener(
     "submit",
-    function (e) {
-      e.preventDefault();
+    function (s) {
+      s.preventDefault();
       list.innerHTML += "<li>" + item.value + "</li>";
       store();
       item.value = "";
@@ -16,8 +16,8 @@
 
   list.addEventListener(
     "click",
-    function (e) {
-      var t = e.target;
+    function (c) {
+      var t = c.target;
       if (t.classList.contains("checked")) {
         t.parentNode.removeChild(t);
       } else {
@@ -45,4 +45,4 @@
     }
   }
   getValues();
-})();
+})()
